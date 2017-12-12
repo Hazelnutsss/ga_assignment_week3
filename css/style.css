@@ -1,0 +1,359 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+	color: #000;
+	line-height: 1.5;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background-color: #f0efef;
+}
+
+button {
+	margin: 0 auto;
+	display: block;
+	border-radius: 5px;
+	font-weight: 800;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+	max-width: 90%;
+ 	margin: 0 auto;
+ 	width: 1024px;
+}
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+	background-color: #033048;
+	margin: 0;
+	height: 100px;
+}
+
+h1 {
+	color: #fff;
+	font-weight: 800;
+	margin: 0 0 0 120px;
+	padding-top: 15px;
+	font-size: 45px;
+	width: 20%;
+	float: left;
+}
+
+header ul {
+	float: right;
+	margin: 40px 80px 0 0;
+	font-size: 20px; 
+	font-weight: 600;
+	color: #f9e42e;
+}
+
+header li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.nav a {
+	color: #f9e42e;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.logo {
+	color: #fff;
+	text-decoration: none;
+}
+
+/******************************************
+/* INTRO
+/*******************************************/
+
+.intro {
+	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
+	background-size: cover;
+	height: 700px;
+	padding-top: 120px;
+}
+
+.intro h2 {
+	color: #fff;
+	font-size: 45px;
+	font-weight: 600;
+	margin: 0 40px 40px 40px;
+	padding: 80px 0 40px 0;
+	text-align: center;
+}
+
+.btn.quote {
+	border: 5px solid #f9e42e;
+	background-color: #f9e42e;
+	color: #033048;
+	font-size: 24px;
+	padding: 10px 50px;
+}
+
+/******************************************
+/* BENEFITS
+/*******************************************/
+
+.benefits {
+	font-weight: 300;
+	font-size: 26px;
+	height: 550px;
+	padding-top: 40px;
+	color: #606161;
+}
+
+.benefits h2 {
+	color: #033048;
+	font-weight: 600;
+}
+
+.benefits p {
+	max-width: 580px;
+	font-size: 24px;
+}
+
+.benefits ul {
+	font-size: 24px;
+	margin: 40px 0 0 40px;
+	max-width: 450px;
+}
+
+/******************************************
+/* TESTIMONIAL
+/*******************************************/
+
+.testimonial {
+	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(134,141,157);
+	background-size: cover;
+	height: 394px;
+	padding: 55px 380px;
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+}
+
+.testimonial p:first-child {
+	font-weight: 300;
+	font-style: italic;
+}
+
+.testimonial p:last-child {
+	font-weight: 600;
+}
+
+
+/******************************************
+/* BLOG POSTS
+/*******************************************/
+main {
+	float: left;
+	width: 75%;
+	margin: 20px 0 40px 0;
+}
+
+article h2 {
+	color: #033048;
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 20px;	
+}
+
+.blog-content {
+	color: #606161;
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+.detail {
+	color:#033048;
+	text-align: right;	
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.detail a {
+	text-decoration: none;
+	color: #033048;
+}
+
+.detail a:hover {
+	font-weight: 800;
+	text-decoration: none;
+}
+
+article img {
+	width: 100%;
+}
+
+.firstcharacter {
+  float: left;
+  font-size: 75px;
+  line-height: 90px;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #606161;
+  margin: 30px 0;
+}
+
+aside {
+	float :right;
+	width: 25%;
+	padding-left: 25px;
+	margin-bottom: 40px;
+	color: #033048;
+}
+
+.category {
+	margin-top: 40px;
+}
+
+aside h3 {
+	font-weight: 800;
+	font-size: 30px;
+	margin: 0 0 10px 0;
+}
+
+aside ul {
+	margin: 0;
+}
+
+aside li {
+	list-style: none;
+	font-size: 22px;
+	margin-left: -40px;
+	font-weight: 300;
+}
+
+aside p {
+	font-size: 22px;	
+	font-weight: 300;
+	margin: 0;
+	line-height: 1.2;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.ad-unit {
+	background-color: #fff;
+	height: 600px;
+	text-align: center;
+	width: 23%;
+	padding: 20px;
+	margin-top: 20px;
+	font-size: 36px;
+	font-weight: 600;
+}
+
+/******************************************
+/* SIGNUP
+/*******************************************/
+
+.signup {
+	height: 120px;
+	background-color: #f9e42e;
+	padding: 30px;
+	clear: both;
+}
+
+#signup {
+	border: 5px solid #033048;
+	background-color: #033048;
+	color: #fff;
+	font-size: 24px;
+	padding: 10px 50px;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+/*How do I put the Facebook icon using FONT ICON again? I've tried to put it to html but it didn't work... :( */
+
+
+footer {
+	background-color: #121212;
+	font-weight: 600;
+	height: 350px;
+	color: #fff;
+	padding: 50px;
+	text-align: center;
+}
+
+footer h2 {
+	color: #f9e42e;
+	font-size: 45px;
+	font-weight: 800;
+	margin: 10px 0 10px 0;
+}
+
+footer ul {
+	margin: 60px 0 60px -17px;
+}
+
+footer li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
